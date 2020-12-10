@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CartoON Mapas</title>
+</head>
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav>
+        <a href="index.html"><div class="imglogo">
+            <img src="logoCartoON.svg" alt="Logo CartoON">
+            <div>
+            <h1>CartoON</h1>
+            <p>mapas</p>
+            </div>
+        </div></a>
+        <ul class="navlinks">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a onclick="document.getElementById('vamola').style.display = 'grid';">Contato</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- QUADRO PRINCIPAL DA PAGINA -->
+    <main id="mainportfolio">
+        <div class="imagemampliada" id="zoom">
+            <div class="imganterior" onclick="voltarimg()">
+                <p> < </p>
+            </div>
+
+                <img src="./img/EIV_Anhanguera.jpg" alt="" id="imgzoom" data-no="">
+                <div class="closebtn">
+                    <p onclick="fechagaleria()"> X </p>
+                </div>
+
+            <div class="imgproxima" onclick="passarimg()">
+                <p> > </p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="boximagem">
+                <a href="#"><img src="./img/Atividade_reduzida.png" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="0" data-original="./img/Atividade.png"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#" ><img src="./img/Atrativos_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="1" data-original="./img/Atrativos.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/Bacias_hidrograficas_2_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="2" data-original="./img/Bacias_hidrograficas_2.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/Biomas_v2_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="3" data-original="./img/Biomas_v2.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/Classificacao2019_reduzida.png" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="4" data-original="./img/Classificacao2019.png"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/EIV_Anhanguera_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="5" data-original="./img/EIV_Anhanguera.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/MAPA2 Extensionistas_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="6" data-original="./img/MAPA2 Extensionistas.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/Polos_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="7" data-original="./img/Polos.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/Ribeirão da Folha_reduzida.png" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="8" data-original="./img/Ribeirão da Folha.png"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/Trechos_Currais_Alves2_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="9" data-original="./img/Trechos_Currais_Alves2.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/TRILHAS_reduzida.jpg" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="10" data-original="./img/TRILHAS.jpg"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/VILLAALBERTINE_V2_reduzida.png" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="11" data-original="./img/VILLAALBERTINE_V2.png"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+            <div class="boximagem">
+                <a href="#"><img src="./img/MapaPati_reduzida.png" alt="Descrição aqui, escrever mais" class="imggaleria" onclick="zoomfoto(this)" data-no="12" data-original="./img/MapaPati.png"></a>
+                <div class="descricao"> <p>Descrição da foto</p> </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <!-- FAIXA INFERIOR REDES SOCIAIS -->
+    <footer>
+        <a href="#"><img class="iconesredessociais" src="facebook.png" alt="Ícone Facebook"></a>
+        <a href="#"><img class="iconesredessociais" src="instagram.jpg" alt="Ícone Instagram"></a>
+        <a href="#"><img class="iconesredessociais" src="linkedin.png" alt="Ícone Linkedin"></a>
+    </footer>
+    <!-- BOX DE CONTATO -->
+    <div class="boxcontato" id="vamola">
+        <div class="contatos">
+            <div class="um" id="um">
+                <img src="logobranca.svg" alt="Logo CartoON" class="logobranca">
+            </div>
+            <div class="dois" id="dois">
+                <h4>Fale Conosco</h4>
+                <p>Entre em contato como preferir</p>
+            </div>
+            <div class="tres" id="tres">
+                <a href="#"><img src="email.svg" alt="Icone Email" class="icone"></a>
+                <a href="#"><img src="whatsappicone.svg" alt="Icone whatsapp" class="icone"></a>
+            </div>
+            <div class="quatro" id="quatro">
+                <p>cartoon.mapas@gmail.com</p>
+                <p>(31) 99698-6614</p>
+            </div>
+            <div class="cinco" id="cinco">
+                <p>Siga nossas redes sociais</p>
+            </div>
+            <div class="seis" id="seis">
+                <a href="#"><img src="facebookicone.svg" alt="Icone facebook" class="icone"></a>
+                <a href="#"><img src="instagramicone.svg" alt="Icone Instagram" class="icone"></a>
+                <a href="#"><img src="linkedinicone.svg" alt="Icone Linkedin" class="icone"></a>
+            </div>
+        </div>
+        <div class="formulario" id="formulario">
+            <span onclick="document.getElementById('vamola').style.display = 'none';">X</span>
+            <form>
+                <div class="inputbox">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="inputbox">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="inputbox">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                <div class="inputbox">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="35"></textarea>
+                </div>
+                <div class="buttonbox">
+                    <button type="submit" name="Enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+

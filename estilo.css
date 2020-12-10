@@ -402,8 +402,8 @@ main {
 
 .slideimg {
     display: flex;
-    height: 556pt;  
-    width: 1196pt;
+    height: auto;  
+    width: 80%;
     border: 2px solid #004AAD;
     border-radius: 0.5%;
     margin: auto;

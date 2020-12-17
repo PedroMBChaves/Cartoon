@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CartoON Mapas</title>
+</head>
+<body>
+<div id="wrapper">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav>
+        <a href="index.html"><div class="imglogo">
+            <img src="logoCartoON.svg" alt="Logo CartoON">
+            <div>
+            <h1>CartoON</h1>
+            <p>mapas</p>
+            </div>
+        </div></a>
+        <ul class="navlinks">
+            <li><a href="index.html" onclick="closeside()">Início</a></li>
+            <li><a href="servicos.html" onclick="closeside()">Serviços</a></li>
+            <li><a href="portfolio.html" onclick="closeside()">Portfólio</a></li>
+            <li><a href="sobre.html" onclick="closeside()">Sobre</a></li>
+            <li><a onclick="formcontato(); closeside()">Contato</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- QUADRO PRINCIPAL DA PAGINA -->
+    <main id="servicos">
+        <div class="servicosbox">
+            <div class="servicos1">
+                <div class="imgservicos">
+                    <img src="./img/GIS.png" alt="Ilustração Geoprocessamento">
+                </div>
+                <div class="textoservicos">
+                    <h2>Geoprocessamento</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis asperiores dicta rerum sed magnam, aperiam libero nostrum! Impedit distinctio placeat possimus minus enim tempore perspiciatis ullam quos, aspernatur consequuntur.</p>
+                </div>
+            </div>
+            <div class="servicos2">
+                <div class="textoservicos">
+                    <h2>Cartografia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos harum architecto debitis quis accusantium quae incidunt asperiores sequi cupiditate blanditiis, veritatis, eius culpa totam at. Ipsam illum eligendi rem facilis.</p>
+                </div>
+                <div class="imgservicos">
+                    <img src="./img/cartografia2.jpg" alt="Ilustração Cartografia">
+                </div>
+            </div>
+            <div class="servicos3">
+                <div class="imgservicos">
+                    <img src="./img/SensoriamentoRemoto.svg" alt="Ilustração Sensoriamento Remoto">
+                </div>
+                <div class="textoservicos">
+                    <h2>Sensoriamento Remoto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste incidunt aliquam perspiciatis quidem magnam minus tempora corrupti illo odio voluptatem veniam pariatur totam, laboriosam repellat velit eius nobis ducimus quasi.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FAIXA INFERIOR REDES SOCIAIS -->
+    <footer>
+    <div class="iconesfooter">
+        <a href="#"><img class="iconesredessociais" src="./img/facebookicone_azul.svg" alt="Ícone Facebook"></a>
+        <a href="#"><img class="iconesredessociais" src="./img/instagramicone_azul.svg" alt="Ícone Instagram"></a>
+        <a href="#"><img class="iconesredessociais" src="./img/linkedinicone_azul.svg" alt="Ícone Linkedin"></a>
+    </div>
+    <div class="direitos"> 
+        <p>©2020 por CartoON mapas.</p> 
+        <p>Todos os direitos reservados.</p>
+    </div>
+    </footer>
+    <!-- BOX DE CONTATO -->
+    <div class="boxcontato" id="vamola">
+        
+        <div class="um" id="um">
+            <img src="logobranca.svg" alt="Logo CartoON" class="logobranca">
+        </div>
+        <div class="dois" id="dois">
+            <h4>Fale Conosco</h4>
+            <p>Entre em contato como preferir</p>
+        </div>
+        <div class="tres" id="tres">
+            <a href="#"><img src="email.svg" alt="Icone Email" class="icone"></a>
+            <a href="#"><img src="whatsappicone.svg" alt="Icone whatsapp" class="icone"></a>
+        </div>
+        <div class="quatro" id="quatro">
+            <p>cartoon.mapas@gmail.com</p>
+            <p>(31) 99698-6614</p>
+        </div>
+        <div class="cinco" id="cinco">
+            <p>Siga nossas redes sociais</p>
+        </div>
+        <div class="seis" id="seis">
+            <a href="#"><img src="facebookicone.svg" alt="Icone facebook" class="icone"></a>
+            <a href="#"><img src="instagramicone.svg" alt="Icone Instagram" class="icone"></a>
+            <a href="#"><img src="linkedinicone.svg" alt="Icone Linkedin" class="icone"></a>
+        </div>
+    
+    <div class="formulario" id="formulario">
+        <span onclick="document.getElementById('vamola').style.display = 'none';">X</span>
+        <form action="https://formspree.io/f/maylpbkk" method="POST">
+            <div class="inputbox">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="inputbox">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="inputbox">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+            <div class="inputbox">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="35"></textarea>
+            </div>
+            
+            <div class="buttonbox">
+                <button type="submit" name="Enviar">Enviar</button>
+            <input type="hidden" name="_next" value="https://pedrombchaves.github.io/Cartoon/index.html " />
+        </form>
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</div>
+</body>
+</html>
+
+
+

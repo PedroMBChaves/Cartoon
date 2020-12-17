@@ -870,8 +870,12 @@ footer {
     .servicos1, .servicos2, .servicos3 {
         flex-direction: column;
         align-items: center;
+        min-width: 383px;
     }
 
+    .imgservicos img {
+        max-width: 383px;
+    }
 }
 
 .servicos2, .servicos3 {

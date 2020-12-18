@@ -843,6 +843,7 @@ footer {
 .sobrebox p{
     font-size: 18px;
     padding-top: 0.5rem;
+	line-height: 1.6;
 }
 
 .sobrebox img{
@@ -896,6 +897,7 @@ footer {
 .textoservicos ul {
 	list-style: none;
 	font-size: 18px;
+	line-height: 1.6;
 }
 
 .textoservicos h2 {
@@ -905,6 +907,7 @@ footer {
 .textoservicos p {
     font-size: 18px;
     padding-top: 0.5rem;
+	line-height: 1.6;
 }
 
 /* FIM DA PAGINA DE SERVIÇOS */

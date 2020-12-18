@@ -399,7 +399,8 @@ button:hover {
 
 .boxcontatoMob {
     display: grid;
-    width: 410px;
+    max-width: 410px;
+	width: 90%;
     height: 570px;
     margin: auto;
     grid-template-columns: 1.5fr 2fr;
@@ -501,7 +502,7 @@ main {
     display: flex;
     height: auto;
     width: 80%;
-    min-width: 500px;
+    min-width: 300px;
     border: 2px solid #004AAD;
     border-radius: 10px;
     margin: auto;
@@ -890,6 +891,10 @@ footer {
 
 .textoservicos {
     padding: 20px;
+}
+
+.textoservicos ul {
+	list-style: none;
 }
 
 .textoservicos h2 {

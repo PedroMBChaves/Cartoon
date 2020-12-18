@@ -489,7 +489,7 @@ button:hover {
 
 main {
     display: inline-block;
-    background-image: url('fundo1.png');
+    background-image: url('./images/fundo1.png');
     background-size: 2923px 2172px;
     padding-top: 20px;
     padding-bottom: 20px;
